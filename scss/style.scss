@@ -1,6 +1,12 @@
 @import "_reset";
 
-.wrapper {
+body {
+	opacity: 0;
+	background: linear-gradient((180deg, #194153 0%, #16233b 100%));
+	.loaded & {
+		background: unset;
+		opacity: 1;
+	}
 }
 .page {
 	&::before {

@@ -2,6 +2,7 @@
 window.addEventListener("load", windowLoad);
 
 function windowLoad() {
+	document.documentElement.classList.add('loaded');
 	const tl = gsap.timeline({ duration: 1 });
 
 	tl.from(".stairs span", {

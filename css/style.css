@@ -51,6 +51,15 @@ button {
   background-color: inherit;
 }
 
+body {
+  opacity: 0;
+  background: linear-gradient(180deg, #194153 0%, #16233b 100%);
+}
+.loaded body {
+  background: unset;
+  opacity: 1;
+}
+
 .page::before {
   content: "";
   position: fixed;
